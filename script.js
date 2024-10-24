@@ -58,7 +58,9 @@ function addNote() {
 
 add.addEventListener('click', addNote);
 clear.addEventListener('click', () => {
-    notes.innerHTML = "";
-    addLine.style.display = 'block';
-    addLine.innerText = `You have removed all notes let's add new ones`;
+    if (notes.children.length !== 0) {
+        notes.innerHTML = "";
+        addLine.style.display = 'block';
+        addLine.innerText = `You have removed all notes let's add new ones`;
+    }
 })
