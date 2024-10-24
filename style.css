@@ -33,6 +33,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 4rem;
+    max-width: 100%;
     opacity: 0;
     transform: translateY(5rem);
     transition: all 2s;
@@ -48,6 +49,7 @@ body {
     width: 92%;
     height: 20%;
     outline: none;
+    border: 2px solid;
     border-radius: 1rem;
     box-shadow: 8px 8px 1rem rgba(188, 104, 89, 0.7),
                 -2px -2px 8px rgba(188, 104, 89, 0.5);
