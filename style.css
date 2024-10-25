@@ -32,7 +32,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: 5rem;
     max-width: 100%;
     opacity: 0;
     transform: translateY(5rem);
@@ -47,7 +47,11 @@ body {
 .input-section textarea {
     padding: 2rem;
     width: 70%;
+    max-width: 100%;
+    min-width: 70%;
     height: 20%;
+    max-height: 40rem;
+    min-height: 15rem;
     outline: none;
     border: 2px solid;
     border-radius: 1rem;
@@ -78,6 +82,7 @@ body {
 
 #notes-color, #text-color {
     width: 4.5rem;
+    flex: 0 0 auto;
 }
 
 .btns {
