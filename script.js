@@ -14,7 +14,7 @@ window.addEventListener('load', () => {
     btns.classList.add('visible');
     h1.classList.add('visible');
     addLine.classList.add('visible');
-})
+});
 
 function addNote() {
     if (text.value.trim() === "") {
@@ -28,7 +28,7 @@ function addNote() {
             duration: 200,
             easing: 'ease-in-out',
             iterations: 4
-        })
+        });
         return;
     }
 
@@ -65,4 +65,4 @@ clear.addEventListener('click', () => {
         addLine.style.display = 'block';
         addLine.innerText = `You have removed all notes let's add new ones`;
     }
-})
+});
