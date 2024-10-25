@@ -10,7 +10,16 @@
     <div class="left-part">
         <div class="input-section">
             <textarea name="" id="textArea" placeholder="// Write a note here" rows="10" cols="50"></textarea>
-            <input type="color" title="Choose-Color" id="color" value="#12ce20">
+            <div class="color-input">
+                <div class="bg-color">
+                    <label for="notes-color">Backround Color -: </label>
+                    <input type="color" title="Choose-background-color" id="notes-color" value="#12ce20">
+                </div>
+                <div class="para-color">
+                    <label for="text-color">Text Color -: </label>
+                    <input type="color" title="Choose-text-olor" id="text-color" value="#ffffff">
+                </div>
+            </div>
         </div>
         <div class="btns">
             <button id="add" class="btn" title="add note">Add Note</button>

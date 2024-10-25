@@ -1,5 +1,6 @@
 const text = document.getElementById('textArea');
-const color = document.getElementById('color');
+const notesColor = document.getElementById('notes-color');
+const textColor = document.getElementById('text-color');
 const add = document.getElementById('add');
 const clear = document.getElementById('clear');
 const notes = document.querySelector('.notes');
@@ -36,11 +37,12 @@ function addNote() {
     let crossBtn = document.createElement('button');
 
     para.innerText = text.value;
+    para.style.color = textColor.value;
     crossBtn.innerText = 'x';
     div.appendChild(para);
     div.appendChild(crossBtn);
     div.classList.add('dynamic-div');
-    div.style.backgroundColor = color.value;
+    div.style.backgroundColor = notesColor.value;
 
     text.value = "";
 

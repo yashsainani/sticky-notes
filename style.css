@@ -32,7 +32,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 4rem;
+    gap: 3rem;
     max-width: 100%;
     opacity: 0;
     transform: translateY(5rem);
@@ -46,7 +46,7 @@ body {
 
 .input-section textarea {
     padding: 2rem;
-    width: 92%;
+    width: 70%;
     height: 20%;
     outline: none;
     border: 2px solid;
@@ -56,15 +56,35 @@ body {
     font-size: 1.6rem;
 }
 
-.input-section input {
-    width: 12%;
-    cursor: pointer;
+.color-input {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.bg-color, .para-color {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.bg-color, .para-color label {
+    font-size: 1.4rem;
+    white-space: nowrap;
+}
+
+#notes-color, #text-color {
+    width: 4.5rem;
 }
 
 .btns {
     display: flex;
     gap: 10%;
-    width: 67%;
+    width: 100%;
+    margin-left: 17%;
     opacity: 0;
     transform: translateY(5rem);
     transition: all 1s;
@@ -76,7 +96,7 @@ body {
 }
 
 .btn {
-    width: 30%;
+    width: 23%;
     height: 5rem;
     background: linear-gradient(to right, rgba(249, 47, 114, 0.6), rgba(250, 148, 52, 0.6));
     border-radius: 3rem;
@@ -172,6 +192,39 @@ body {
     font-size: 2rem;
 }
 
+@media screen and (max-width: 1199px) {
+    .left-part {
+        padding: 2rem;
+    }
+    
+    .input-section {
+        flex-direction: column;
+        align-self: center;
+        width: 100%;
+    }
+
+    .input-section textarea {
+        width: 100%;
+    }
+
+    .color-input {
+        width: 100%;
+    }
+
+    #notes-color, #text-color {
+        width: 50%;
+    }
+
+    .btns {
+        margin-left: 0;
+    }
+
+    .btn {
+        align-self: center;
+        width: 50%;
+    }
+}
+
 @media screen and (max-width: 667px) {
     body {
         flex-direction: column;
@@ -181,21 +234,16 @@ body {
         width: 100%;
     }
 
-    .input-section {
-        flex-direction: column;
-    }
-
-    .btn {
-        align-self: center;
-        width: 50%;
-    }
-
     .dynamic-div {
         width: 49%;
     }
 }
 
 @media screen and (max-width: 400px) {
+    .input-section {
+        width: 100%;
+    }
+
     .btns {
         flex-direction: column;
         gap: 1rem;
